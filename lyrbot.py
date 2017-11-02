@@ -47,7 +47,7 @@ def update_songs():
     for file in os.listdir("paroles/disney"):
         if not file.endswith(".txt"):
             continue
-        with open("paroles/" + file) as file:
+        with open("paroles/disney/" + file) as file:
             lines.pop()
             lines += file.readlines()
     for i in range(0, len(lines)-1):
