@@ -58,7 +58,7 @@ class Bot(irc.bot.SingleServerIRCBot):
     def on_privmsg(self, conn, e):
         if e.source.nick in self.operators:
             return self.do_command(conn, e.arguments[0].split(' '), self.operators[e.source.nick], e.source.nick)
-        return self.do_command(conn, e.arguments[0], 0, e.source.nick)
+        return self.do_command(conn, e.arguments[0].split(' '), 0, e.source.nick)
 
     def do_command(self, conn, command, level, source):
         if command[0].casefold() == "op":
