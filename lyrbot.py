@@ -14,7 +14,7 @@ chansons = {}
 
 def update_songs():
     global chansons
-    chanson = {'': [], 'disney': []}
+    chansons = {'': [], 'disney': []}
     lines = [""]
     for file in os.listdir("paroles"):
         if not file.endswith(".txt"):
