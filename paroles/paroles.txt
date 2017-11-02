@@ -763,7 +763,7 @@ C'est la mer qui prend l'homme"
 Moi la mer elle m'a pris
 Au dépourvu, tant pis...
 
-J'ai ue si mal au coeur
+J'ai ue si mal au cœur
 Sur la mer en furie
 Qu'j'ai vomi mon quatre-heures
 Et mon minuit aussi.
@@ -1746,7 +1746,7 @@ A Göttingen, à Göttingen.
 
 Et lorsque sonnerait l'alarme,
 S'il fallait reprendre les armes,
-Mon coeur verserait une larme
+Mon cœur verserait une larme
 Pour Göttingen, pour Göttingen.
 
 Mais c'est bien joli tout de même,
@@ -1754,7 +1754,7 @@ A Göttingen, à Göttingen.
 
 Et lorsque sonnerait l'alarme,
 S'il fallait reprendre les armes,
-Mon coeur verserait une larme
+Mon cœur verserait une larme
 Pour Göttingen, pour Göttingen
 
 = La solitude = GlVrWsEUFGY = 2 = solitude
@@ -1770,12 +1770,12 @@ Elle est revenue, elle est là
 
 Avec sa gueule de carême
 Avec ses larges yeux cernés,
-Elle nous fait le coeur à la traîne,
-Elle nous fait le coeur à pleurer,
+Elle nous fait le cœur à la traîne,
+Elle nous fait le cœur à pleurer,
 Elle nous fait des matins blêmes
 Et de longues nuits désolées.
 La garce ! Elle nous ferait même
-L'hiver au plein coeur de l'été.
+L'hiver au plein cœur de l'été.
 
 Dans ta triste robe de moire
 Avec tes cheveux mal peignés,
@@ -1789,7 +1789,7 @@ Va t-en voir ailleurs si j'y suis !
 Je veux encore rouler des hanches,
 Je veux me saouler de printemps,
 Je veux m'en payer, des nuits blanches,
-A coeur qui bat, à coeur battant.
+A cœur qui bat, à cœur battant.
 Avant que sonne l'heure blême
 Et jusqu'à mon souffle dernier,
 Je veux encore dire "je t'aime"
@@ -3295,14 +3295,14 @@ Sur des îles lointaines
 Où rien n’est important
 Que de vivre
 Où les filles alanguies
-Vous ravissent le coeur
+Vous ravissent le cœur
 En tressant m'a-t-on dit
 De ces colliers de fleurs
 Qui enivrent
 
 Je fuirai laissant là mon passé
 Sans aucun remords
-Sans bagage et le coeur libéré
+Sans bagage et le cœur libéré
 En chantant très fort
 
 Emmenez-moi
@@ -3344,7 +3344,7 @@ Du tout au tout.
 Plus gris que le gris de ma vie
 Rien ne serait plus gris
 Pas même un ciel de pluie
-Plus noir que le noir de mon coeur
+Plus noir que le noir de mon cœur
 La terre en profondeur
 N'aurait pas sa noirceur
 Plus vide que mes jours sans toi
@@ -3580,7 +3580,7 @@ L'iris troué de noir plus bleu d'être endeuillé
 
 Tes yeux dans le malheur ouvrent la double brèche
 Par où se reproduit le miracle des Rois
-Lorsque le coeur battant ils virent tous les trois
+Lorsque le cœur battant ils virent tous les trois
 Le manteau de Marie accroché dans la crèche
 
 Une bouche suffit au mois de Mai des mots
@@ -3905,7 +3905,7 @@ Elle a tiré la première, elle m'a touché, c'est foutu
 
 = Toi mon amour = U02LXUNcdTo = 2 = mon amour
 
-Toi mon amour, toi qui a le coeur lourd mon amour
+Toi mon amour, toi qui a le cœur lourd mon amour
 Est-ce que tu m'aimes toujours, pour toujours
 Moi je suis fait pour
 Toi mon amour
@@ -3920,7 +3920,7 @@ Et tu n'en savais pas plus que moi
 A nos amours
 Avec ma pomme et ta gueule d'amour
 Même si c'est pas tout rose tous les jours
-Mon coeur se bat pour
+Mon cœur se bat pour
 Toi mon amour
 Mon corps en a envie tous les jours
 Moi qui ne croit plus guère à l'amour
@@ -3930,7 +3930,7 @@ Je vole en éclat ah ah ah
 Avant toi j'ignorais tout ça
 Et tu n'en savais pas plus que moi
 
-Toi mon amour, toi qui a le coeur lourd mon amour
+Toi mon amour, toi qui a le cœur lourd mon amour
 Est-ce que tu m'aimes toujours, pour toujours
 
 Sur un signe, un seul mot de toi
@@ -3939,7 +3939,7 @@ Avant toi j'ignorais tout ça
 Et tu n'en savais pas plus que moi
 Avant toi j'ignorais tout ça
 Et tu n'en savais pas plus que moi
-Toi mon amour, toi qui a le coeur lourd mon amour
+Toi mon amour, toi qui a le cœur lourd mon amour
 Est-ce que tu m'aimes toujours, pour toujours
 
 == France Gall
@@ -4230,7 +4230,7 @@ On va s'aimer, à se brûler la peau
 Où l'amour est beau, oh, oh, oh, oh, oh
 
 On va s'aimer, aux marches des églises
-Se réchauffer au coeur des banquises
+Se réchauffer au cœur des banquises
 Se murmurer toutes ces bêtises
 On va s'aimer, j'aime que tu dises
 On va partir au bout d'une île
@@ -4390,6 +4390,78 @@ J'y pense et puis j'oublie
 C'est la vie, c'est la vie
 
 == Jacques Brel
+
+= Le port d'Amsterdam = Fcw4SRGcY_E = 2 = msterdam
+
+Dans le port d'Amsterdam
+Y a des marins qui chantent
+Les rêves qui les hantent
+Au large d'Amsterdam
+Dans le port d'Amsterdam
+Y a des marins qui dorment
+Comme des oriflammes
+Le long des berges mornes
+Dans le port d'Amsterdam
+Y a des marins qui meurent
+Pleins de bière et de drames
+Aux premières lueurs
+Mais dans le port d'Amsterdam
+Y a des marins qui naissent
+Dans la chaleur épaisse
+Des langueurs océanes
+
+Dans le port d'Amsterdam
+Y a des marins qui mangent
+Sur des nappes trop blanches
+Des poissons ruisselants
+Ils vous montrent des dents
+A croquer la fortune
+A décroisser la lune
+A bouffer des haubans
+Et ça sent la morue
+Jusque dans le cœur des frites
+Que leurs grosses mains invitent
+A revenir en plus
+Puis se lèvent en riant
+Dans un bruit de tempête
+Referment leur braguette
+Et sortent en rotant
+
+Dans le port d'Amsterdam
+Y a des marins qui dansent
+En se frottant la panse
+Sur la panse des femmes
+Et ils tournent et ils dansent
+Comme des soleils crachés
+Dans le son déchiré
+D'un accordéon rance
+Ils se tordent le cou
+Pour mieux s'entendre rire
+Jusqu'à ce que tout à coup
+L'accordéon expire
+Alors le geste grave
+Alors le regard fier
+Ils ramènent leur batave
+Jusqu'en pleine lumière
+
+Dans le port d'Amsterdam
+Y a des marins qui boivent
+Et qui boivent et reboivent
+Et qui reboivent encore
+Ils boivent à la santé
+Des putains d'Amsterdam
+De Hambourg ou d'ailleurs
+Enfin ils boivent aux dames
+Qui leur donnent leur joli corps
+Qui leur donnent leur vertu
+Pour une pièce en or
+Et quand ils ont bien bu
+Se plantent le nez au ciel
+Se mouchent dans les étoiles
+Et ils pissent comme je pleure
+Sur les femmes infidèles
+Dans le port d'Amsterdam
+Dans le port d'Amsterdam.
 
 = Ne me quitte pas = 0k63grkip5I = 2 = quitte
 
