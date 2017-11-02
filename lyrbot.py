@@ -86,6 +86,7 @@ class LyrBot(Bot):
             if self.started:
                 self.command_buffer.append((conn, command, level, source))
                 return
+            os.system("git pull")
             update_songs()
             self.started = False
             self.answers = []
