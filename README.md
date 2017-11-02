@@ -26,6 +26,7 @@ Bla bla bla
 
 ...
 
-=```
+=
+```
 
 (n'oubliez de terminer le fichier par un `=`)
