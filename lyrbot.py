@@ -8,15 +8,17 @@ def remove_accents(data):
     return unicodedata.normalize('NFKD', data).encode('ASCII', 'ignore').decode('utf-8').casefold()
 
 def normalize(s):
-    return remove_accents(s).replace("-", " ").replace("'", " ").replace("?", "").replace(",", "").strip()
+    return remove_accents(s).replace("-", " ").replace("'", " ").replace("?", "").replace(",", "").replace('.', '').strip()
 
-chansons = []
+chansons = {}
 
 def update_songs():
     global chansons
-    chansons = []
+    chanson = {'': [], 'disney': []}
     lines = [""]
     for file in os.listdir("paroles"):
+        if not file.endswith(".txt"):
+            continue
         with open("paroles/" + file) as file:
             lines.pop()
             lines += file.readlines()
@@ -40,7 +42,35 @@ def update_songs():
                 else:
                     strophes[-1].append(lines[j].strip())
                 j += 1
-            chansons.append({"title": line[0], "youtube": line[1], "lines": int(line[2]), "remove": line[3], "strophes": strophes, "chanteur": chanteur, "remark": line[4]})
+            chansons[''].append({"title": line[0], "youtube": line[1], "lines": int(line[2]), "remove": line[3], "strophes": strophes, "chanteur": chanteur, "remark": line[4]})
+    lines = [""]
+    for file in os.listdir("paroles/disney"):
+        if not file.endswith(".txt"):
+            continue
+        with open("paroles/" + file) as file:
+            lines.pop()
+            lines += file.readlines()
+    for i in range(0, len(lines)-1):
+        line = lines[i]
+        if line.startswith("=="):
+            chanteur = line[2:].strip()
+        elif line.startswith("="):
+            line = [field.strip() for field in line[1:].split('=')]
+            if len(line) == 3:
+                line.append([])
+            else:
+                line[3] = [field.strip() for field in line[3].split('|')]
+            if len(line) == 4:
+                line.append("")
+            strophes = []
+            j = i+1
+            while not lines[j].startswith('='):
+                if lines[j] == '\n':
+                    strophes.append([])
+                else:
+                    strophes[-1].append(lines[j].strip())
+                j += 1
+            chansons['disney'].append({"title": line[0], "youtube": line[1], "lines": int(line[2]), "remove": line[3], "strophes": strophes, "chanteur": chanteur, "remark": line[4]})
 
 
 class LyrBot(Bot):
@@ -75,29 +105,32 @@ class LyrBot(Bot):
             conn.privmsg(source, "Commandes privées: SCORES (affiche les scores des joueurs), HELP (affiche cette aide), STATS (affiche le nombre chansons et le nom des chanteur·euse·s)")
             conn.privmsg(source, "Commandes: ENCORE (jouer à nouveau), HINT ou INDICE (affiche un indice)")
         if command[0].casefold() == "stats":
-            conn.privmsg(source, "Chansons: " + str(len(chansons)))
-            chanteurs = {}
-            for chanson in chansons:
-                chanteur = chanson["chanteur"]
-                if chanteur in chanteurs:
-                    chanteurs[chanteur] += 1
-                else:
-                    chanteurs[chanteur] = 1
-            mess = ""
-            first = True
-            finished = False
-            for chanteur in chanteurs:
-                finished = False
-                mess += ", " + chanteur + " (" + str(chanteurs[chanteur]) + ")"
-                if len(mess) >= 400:
-                    if first:
-                        conn.privmsg(source, "Chanteur·euse·s: " + mess[2:])
-                        first = False
+            for cat in ['', 'disney']:
+                if cat:
+                    conn.privmsg(source, "Catégorie: "+cat)
+                conn.privmsg(source, "Chansons: " + str(len(chansons[cat])))
+                chanteurs = {}
+                for chanson in chansons[cat]:
+                    chanteur = chanson["chanteur"]
+                    if chanteur in chanteurs:
+                        chanteurs[chanteur] += 1
                     else:
-                        conn.privmsg(source, mess[2:])
-                        finished = True
-                    mess = ""
-            conn.privmsg(source, mess[2:])
+                        chanteurs[chanteur] = 1
+                mess = ""
+                first = True
+                finished = False
+                for chanteur in chanteurs:
+                    finished = False
+                    mess += ", " + chanteur + " (" + str(chanteurs[chanteur]) + ")"
+                    if len(mess) >= 400:
+                        if first:
+                            conn.privmsg(source, "Chanteur·euse·s: " + mess[2:])
+                            first = False
+                        else:
+                            conn.privmsg(source, mess[2:])
+                            finished = True
+                        mess = ""
+                conn.privmsg(source, mess[2:])
 
     def on_pubmsg(self, conn, e):
         global chansons
@@ -113,7 +146,7 @@ class LyrBot(Bot):
                 else:
                     self.scores[nick] = 1
                 self.save_scores()
-                conn.privmsg(canal, "Bravo " + nick + ", la réponse était " + self.answer + " de " + self.chanteur + ((" " + self.remark) if self.remark else "") + ((" (https://www.youtube.com/watch?v=" + self.youtube + ")" ) if self.youtube else "" ))
+                conn.privmsg(canal, "Bravo " + nick + ", la réponse était \"" + self.answer + "\" de " + self.chanteur + ((" " + self.remark) if self.remark else "") + ((" (https://www.youtube.com/watch?v=" + self.youtube + ")" ) if self.youtube else "" ))
                 self.started = False
                 for command in self.command_buffer:
                     self.do_command(*command)
@@ -134,17 +167,18 @@ class LyrBot(Bot):
             if self.started:
                 conn.privmsg(canal, "Indice: "+self.chanteur)
                 return
-        if s[1].casefold() == "encore":
+        if s[1].casefold() == "encore" or s[1].casefold() == "disney":
+            cat = s[1].casefold() if s[1].casefold() in chanson else ""
             if self.started:
                 conn.privmsg(canal, "Rappel: "+self.mess)
                 return
-            i = random.randint(0, len(chansons)-1)
-            while i in self.answers:
-                i = random.randint(0, len(chansons)-1)
+            i = random.randint(0, len(chansons[cat])-1)
+            while (cat, i) in self.answers:
+                i = random.randint(0, len(chansons[cat])-1)
             if len(self.answers) >= 10:
                 del self.answers[0]
-            self.answers.append(i)
-            chanson = chansons[i]
+            self.answers.append((cat, i))
+            chanson = chansons[cat][i]
             self.answer = chanson["title"]
             self.youtube = chanson["youtube"]
             self.chanteur = chanson["chanteur"]
