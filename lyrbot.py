@@ -168,7 +168,7 @@ class LyrBot(Bot):
                 conn.privmsg(canal, "Indice: "+self.chanteur)
                 return
         if s[1].casefold() == "encore" or s[1].casefold() == "disney":
-            cat = s[1].casefold() if s[1].casefold() in chanson else ""
+            cat = s[1].casefold() if s[1].casefold() in chansons else ""
             if self.started:
                 conn.privmsg(canal, "Rappel: "+self.mess)
                 return
