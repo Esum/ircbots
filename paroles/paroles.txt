@@ -27,7 +27,7 @@ J'emportais des milliers d'amants.
 J'étais la France. Qu'est-ce qu'il en reste ?
 Un corps-mort pour des cormorans.
 
-Ne m'appelez plus jamais "France ".
+Ne m'appelez plus jamais "France".
 La France elle m'a laissé tomber.
 Ne m'appelez plus jamais "France".
 C'est ma dernière volonté.
@@ -2177,7 +2177,7 @@ J'y pense j'y penserai toujours
 La pendule de l'entrée
 S'est arrêtée sur midi
 A ce moment très précis
-Où tu m'as dit: " Je vais partir "
+Où tu m'as dit: "Je vais partir"
 Et puis tu es partie
 J'ai cherché le repos
 J'ai vécu comme un robot
@@ -2202,7 +2202,7 @@ L'amour c'est comme un refrain
 Ça se chante et ça se danse
 Et ça revient, ça se retient
 Comme une chanson populaire
-Ça vous fait un cur tout neuf
+Ça vous fait un cœur tout neuf
 Ça vous accroche des ailes blanches dans le dos
 Ça vous fait marcher sur des nuages
 Et ça vous poursuit en un mot
@@ -2240,7 +2240,7 @@ L'amour c'est comme un refrain
 Ça se chante et ça se danse
 Et ça revient, ça se retient
 Comme une chanson populaire
-Ça vous fait un cur tout neuf
+Ça vous fait un cœur tout neuf
 Ça vous accroche des ailes blanches dans le dos
 Ça vous fait marcher sur des nuages
 Et ça vous poursuit en un mot
@@ -2446,7 +2446,7 @@ Dans le ciel passait une musique
 Un oiseau qu'on appelait Spoutnik
 Quelle année cette année-là
 
-C'est là qu'on a dit adieu à Marilyn au coeur d'or
+C'est là qu'on a dit adieu à Marilyn au cœur d'or
 Tandis que West Side battait tous les records
 
 Cette année-là
